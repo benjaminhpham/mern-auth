@@ -1,0 +1,43 @@
+// Login User
+POST http://localhost:8000/api/users/auth
+Content-Type: application/json
+
+{
+  "email": "ben@gmail.com", 
+  "password":"ben"
+}
+
+###
+// Register User 
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+  "name": "benji", 
+  "email": "benji@gmail.com", 
+  "password": "benji"
+}
+
+###
+// Logout User
+POST http://localhost:8000/api/users/logout 
+
+
+###
+// Get Uset Profile 
+GET http://localhost:8000/api/users/profile 
+
+
+###
+// Update User Profile 
+PUT http://localhost:8000/api/users/profile 
+Content-Type: application/json
+
+{
+  "name": "benji123", 
+  "email": "ben@gmail.com", 
+  "password":"ben"
+}
+
+
+
